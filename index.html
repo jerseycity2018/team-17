@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
+  
   <head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>Team-17 Rare App</title>
 
     <!-- Bootstrap core CSS -->
@@ -104,17 +107,81 @@
     </section>
 
     <!-- About Section -->
-    <section class="bg-primary text-white mb-0" id="about">
+        <section class="bg-primary text-white mb-0" id="about">
       <div class="container">
         <h2 class="text-center text-uppercase text-white">Dashboard</h2>
+        <div style="float: left; width: 50%;" class="column">
         <hr class="star-light mb-5">
         <div class="row">
-          <div class="col-lg-4 ml-auto">
-            <p class="lead">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-          </div>
-          <div class="col-lg-4 mr-auto">
-            <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-          </div>
+        <img src="assets/Beans.png" class="img-circle" width="80" height="80">
+        <img src="assets/Vegetables.png" class="img-circle" width="70" height="70">
+        <img src="assets/Fruits.png" class="img-circle" width="40" height="40">
+        <img src="assets/Grain.png" class="img-circle" width="20" height="20">
+        <img src="assets/Other.png" class="img-circle" width="30" height="30"></div>
+         <div style="float: right; width: 50%;" class="column">
+         <p> LEADERBOARD </p>
+         <p id="player1"> 1. </p>
+         <p id="player2"> 2. </p>
+         <p id="player3"> 3. </p></div>
+         <script>
+          /*var text = {
+              "Beans" : 40, "Vegetables" : 34, "Fruits" : 20, "Grain" : 10, "Other" : 15};
+            //<!--var text = JSON.parse{{nameinfo}};-->
+            console.log(text);
+            var text = {
+            "name":"John",
+            "age":30,
+            "cars":[ "Ford", "BMW", "Fiat" ]
+            }*/
+            /*var text = JSON.parse('{"Beans" : 40, "Vegetables" : 34, "Fruits" : 20, "Grain" : 10, "Other" : 15}');
+            var cats = Object.keys(text);
+            var freqs = Object.values(text);
+            //console.log(cats[0]);
+            var food_cats = {};
+            for (var i = 0; i < cats.length; i++){
+              food_cats[i] = cats[i];
+              food_cats[cats[i]] = freqs[i];
+                //Object.assign(food_cats, {cats[i] freqs[i]});
+                //food_cats[i].values = freqs[i];
+            }*/
+
+            //console.log(Object.keys(text).length);
+            var d = [];
+            var usernames = [{
+              "username": "sam",
+              "password": "samword",
+              "points": 40
+            },
+            {
+              "username": "aaron",
+              "password": "aaroned",
+              "points": 50
+            },
+            {
+              "username": "dhruvil",
+              "password": "dhruviled",
+              "points": 30
+            },
+            {
+              "username": "nayana",
+              "password": "nayaned",
+              "points": 40
+            },
+            {
+              "username": "yan",
+              "password": "yanword",
+              "points": 50
+            }
+            ];
+            // var text = JSON.parse('usernames')
+            for (i = 0; i < usernames.length; i++) {
+              d.push(usernames[i].points + " : " + usernames[i].username)
+            }
+            var sorted = d.sort().reverse()
+            document.getElementById("player1").innerHTML = d[0]
+            document.getElementById("player2").innerHTML = d[1]
+            document.getElementById("player3").innerHTML = d[2]
+          </script>
         </div>
         <div class="text-center mt-4">
           <a class="btn btn-xl btn-outline-light" href="#">
