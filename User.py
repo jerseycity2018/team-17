@@ -1,16 +1,18 @@
 from flask import Flask, flash, request, redirect, render_template, session, abort
-import sqlite3
-#from sqlalchemy import create_engine
-#from sqlalchemy import sql
+from flask_bootstrap import Bootstrap
+#from flask.ext.scss import Scss
+import json
 
-conn = sqlite3.connect("pathtofilehere")
-c = conn.cursor
+#conn = sqlite3.connect("pathtofilehere")
+#c = conn.cursor
 
 app = Flask(__name__)
+Bootstrap(app)
+#Scss(app, static_dir='static', asset_dir='assests')
 
 @app.route('/')
-def hello_world():
-    return render_template('login_test.html')
+def index():
+    return render_template('index.html')
 
 @app.route('/login', methods=['POST'])
 def login():
@@ -18,22 +20,42 @@ def login():
 	password = request.form['password']
 	print(username)
 	print(password)
-	user = checkUser(username, password)
-	if user is not None :
+	result = check(username, password)
+	if result == True:
 		return render_template('index.html')
 	else:
 		error = "wrong password or username"
 		print(error)
 	return render_template('index.html', error=error)
 
-def checkUser(username, password):
-	rs = c.execute("SELECT * FROM username_tbl WHERE username = %s AND password = %s", (username, password))
-	# rs = con.execute("SELECT * FROM beers")
-	result = rs.first()
-	if result is None:
-		return None
-	else:
-		print(result)
-		return result 
+@app.route('/dashboard', methods=['GET','POST'])
+def dashboard():
+	if requests.method=='GET':
+		username = request.form['username']
+		result = getData(username)
+	
+
+def check(username, password):
+	with open('users.json') as json_user_data :
+		d = json.load(json_user_data)
+		for users in d['users']:
+			if users['username']==username and users['password']==password:
+				return True 
+	return False
+
+
+
+
+
+
+#def checkUser(username, password):
+#	rs = c.execute("SELECT * FROM username_tbl WHERE username = %s AND password = %s", (username, password))
+#	# rs = con.execute("SELECT * FROM beers")
+#	result = rs.first()
+#	if result is None:
+#		return None
+#	else:
+#		print(result)
+#		return result 
 
 	

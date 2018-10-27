@@ -1,4 +1,4 @@
-[
+{"users": [
   {
     "username": "sam",
     "password": "samword",
@@ -24,4 +24,4 @@
     "password": "yanword",
     "points": 50
   }
-]
+]}

@@ -1,4 +1,4 @@
-[
+{
   "sam": [
   {
     "Food": "Starch",
@@ -74,7 +74,7 @@
     "Food": "Other",
     "Frequency": 30
   }
-]
+],
 "nayana": [
   {
     "Food": "Fruit",
@@ -100,7 +100,7 @@
     "Food": "Starch",
     "Frequency": 10
   }
-]
+],
 "yan": [
   {
     "Food": "Meat",
@@ -122,5 +122,4 @@
     "Food": "Fruit",
     "Frequency": 10
   }
-]
-]
+]}
