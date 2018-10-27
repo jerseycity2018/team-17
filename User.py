@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return render_template('index.html')
+    return render_template('login_test.html')
 
 @app.route('/login', methods=['POST'])
 def login():
@@ -11,6 +11,6 @@ def login():
 		session['logged_in'] = True
 	else:
 		flash('wrong password!')
-	return home()
+	return 'Done'
 
 	
