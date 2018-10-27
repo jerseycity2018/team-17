@@ -2,14 +2,59 @@
 <html lang="en">
 
 <head>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
 
   <title>Team-17 Rare App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   <style>
+   body {font-family: Arial, Helvetica, sans-serif;}
 
+   /* The Modal (background) */
+   .modal {
+       display: none; /* Hidden by default */
+       position: fixed; /* Stay in place */
+       z-index: 1; /* Sit on top */
+       padding-top: 100px; /* Location of the box */
+       left: 0;
+       top: 0;
+       width: 100%; /* Full width */
+       height: 100%; /* Full height */
+       overflow: auto; /* Enable scroll if needed */
+       background-color: rgb(0,0,0); /* Fallback color */
+       background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+   }
+
+   /* Modal Content */
+   .modal-content {
+       background-color: #fefefe;
+       margin: auto;
+       padding: 20px;
+       border: 1px solid #888;
+       width: 80%;
+   }
+
+   /* The Close Button */
+   .close {
+       color: #aaaaaa;
+       float: right;
+       font-size: 28px;
+       font-weight: bold;
+   }
+
+   .close:hover,
+   .close:focus {
+       color: #000;
+       text-decoration: none;
+       cursor: pointer;
+   }
+ </style>
   <!-- Bootstrap core CSS -->
   <link href="static/styles/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -27,8 +72,81 @@
 </head>
 
 <body id="page-top">
+ <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+   <!-- Navigation -->
+   <h2>Modal Example</h2>
 
-  <!-- Navigation -->
+   <!-- Trigger/Open The Modal -->
+
+     <!-- The Modal -->
+     <div id="myModal" class="modal">
+
+       <!-- Modal content -->
+       <div class="modal-content">
+
+         <span class="close">&times;</span>
+         <p style="color:darkseagreen; font-family: 'Aclonica';font-size: 22px;" id="popup"></p>
+       </div>
+
+     </div>
+
+     <script>
+     // Get the modal
+     var modal = document.getElementById('myModal');
+
+     // Get the button that opens the modal
+     //var btn = document.getElementById("myBtn");
+
+     // Get the <span> element that closes the modal
+     var span = document.getElementsByClassName("close")[0];
+
+     // When the user clicks the button, open the modal
+     modal.style.display = "block";
+
+     // When the user clicks on <span> (x), close the modal
+     span.onclick = function() {
+         modal.style.display = "none";
+     }
+
+     // When the user clicks anywhere outside of the modal, close it
+     window.onclick = function(event) {
+         if (event.target == modal) {
+             modal.style.display = "none";
+         }
+     }
+     </script>
+   <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+     <div class="container">
+       <a class="navbar-brand js-scroll-trigger" href="#page-top">Food Plate</a>
+       <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+         Menu
+         <i class="fas fa-bars"></i>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarResponsive">
+         <ul class="navbar-nav ml-auto">
+           <li class="nav-item mx-0 mx-lg-1">
+             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Home</a>
+           </li>
+           <li class="nav-item mx-0 mx-lg-1">
+             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Dashboard</a>
+           </li>
+           <li class="nav-item mx-0 mx-lg-1">
+             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </nav>
+
+   <!-- Header -->
+
+   <script>
+     var messages = ["For every kg of Lamb there is an emission of 39.2 kg of CO2", "For every kg of Beef there is an emission of 27 kg of CO2", "For every kg of Cheese there is an emission of 13.5 kg of CO2", "For every kg of Pork there is an emission of 12.1 kg of CO2", "For every kg of Farm Salmon there is an emission of 11.9 kg of CO2", "For every kg of Turkey there is an emission of 10.9 kg of CO2", "For every kg of Chicken there is an emission of 6.9 kg of CO2", "For every kg of Canned Tuna there is an emission of 6.1 kg of CO2", "For every kg of Eggs there is an emission of 4.8 kg of CO2", "For every kg of Milk there is an emission of 1.9 kg of CO2"];
+     //console.log(Math.random() * 10)
+     var message = messages[parseInt(Math.random() * 10)];
+     document.getElementById("popup").innerHTML = message;
+     console.log(message);
+   </script>
   <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">Food Plate</a>
@@ -56,7 +174,7 @@
   <!-- Header -->
   <header class="masthead bg-primary text-white text-center">
     <div class="container">
-      <img class="img-fluid mb-5 d-block mx-auto" src="static/img/profile.png" alt="">
+      <img class="img-fluid mb-5 d-block mx-auto" src="static/img/minappicon.png" alt="">
       <h1 class="text-uppercase mb-0">Food Plate</h1>
       <hr class="star-light">
       <h2 class="font-weight-light mb-0">THE WAY WE REPRESENT INFO MATTERS</h2>
@@ -129,65 +247,91 @@
     </div>
   </section>
 
-  <!-- About Section -->
-  <section class="bg-primary text-white mb-0" id="about">
-    <div class="container">
-      <h2 class="text-center text-uppercase text-white">Dashboard</h2>
-      <hr class="star-light mb-5">
-      <div class="row">
-        <div class="col-lg-4 ml-auto">
-          <p class="lead">See how others are doing!</p>
+  
+    <!-- About Section -->
+       <section class="bg-primary text-white mb-0" id="about">
+     <div class="container">
+       <h2 class="text-center text-uppercase text-white">Dashboard</h2>
+       <div style="float: left; width: 100%;" class="column">
+       <hr class="star-light mb-5">
+       <div class="row">
+       <img src="static/assets/Beans.png" class="img-circle" width="100" height="100">
+       <img src="static/assets/Vegetables.png" class="img-circle" width="80" height="80">
+       <img src="static/assets/Fruits.png" class="img-circle" width="50" height="50">
+       <img src="static/assets/Grain.png" class="img-circle" width="45" height="45">
+       <img src="static/assets/Other.png" class="img-circle" width="30" height="30"></div>
+        <div style="float: right; width: 25%;font-size: 14px" class="column">
+        <p> LEADERBOARD </p>
+        <p id="player1"> 1. </p>
+        <p id="player2"> 2. </p>
+        <p id="player3"> 3. </p>
+        <p id="player4"> 4. </p>
+        <p id="player5"> 5. </p>
         </div>
-        <div class="col-lg-4 mr-auto">
-          <script>
-            var d = [];
-            var usernames = [{
-              "username": "sam",
-              "password": "samword",
-              "points": 40
-            },
-            {
-              "username": "aaron",
-              "password": "aaroned",
-              "points": 50
-            },
-            {
-              "username": "dhruvil",
-              "password": "dhruviled",
-              "points": 30
-            },
-            {
-              "username": "nayana",
-              "password": "nayaned",
-              "points": 40
-            },
-            {
-              "username": "yan",
-              "password": "yanword",
-              "points": 50
-            }
-            ];
-            // var text = JSON.parse('usernames')
-            for (i = 0; i < usernames.length; i++) {
-              d.push(usernames[i].points + " : " + usernames[i].username)
-            }
-            var sorted = d.sort().reverse()
-          </script>
+        <script>
+         /*var text = {
+             "Beans" : 40, "Vegetables" : 34, "Fruits" : 20, "Grain" : 10, "Other" : 15};
+           //<!--var text = JSON.parse{{nameinfo}};-->
+           console.log(text);
+           var text = {
+           "name":"John",
+           "age":30,
+           "cars":[ "Ford", "BMW", "Fiat" ]
+           }*/
+           /*var text = JSON.parse('{"Beans" : 40, "Vegetables" : 34, "Fruits" : 20, "Grain" : 10, "Other" : 15}');
+           var cats = Object.keys(text);
+           var freqs = Object.values(text);
+           //console.log(cats[0]);
+           var food_cats = {};
+           for (var i = 0; i < cats.length; i++){
+             food_cats[i] = cats[i];
+             food_cats[cats[i]] = freqs[i];
+               //Object.assign(food_cats, {cats[i] freqs[i]});
+               //food_cats[i].values = freqs[i];
+           }*/
 
-          <p class="lead">
-
-          </p>
-        </div>
-      </div>
-      <div class="text-center mt-4">
-        <a class="btn btn-xl btn-outline-light" href="#">
-          <i class="fas fa-download mr-2"></i>
-          Join!
-        </a>
-      </div>
-    </div>
-  </section>
-
+           //console.log(Object.keys(text).length);
+           var d = [];
+           var usernames = [{
+             "username": "sam",
+             "password": "samword",
+             "points": 40
+           },
+           {
+             "username": "aaron",
+             "password": "aaroned",
+             "points": 50
+           },
+           {
+             "username": "dhruvil",
+             "password": "dhruviled",
+             "points": 30
+           },
+           {
+             "username": "nayana",
+             "password": "nayaned",
+             "points": 40
+           },
+           {
+             "username": "yan",
+             "password": "yanword",
+             "points": 50
+           }
+           ];
+           // var text = JSON.parse('usernames')
+           for (i = 0; i < usernames.length; i++) {
+             d.push(usernames[i].points + " : " + usernames[i].username)
+           }
+           var sorted = d.sort().reverse()
+           document.getElementById("player1").innerHTML = d[0]
+           document.getElementById("player2").innerHTML = d[1]
+           document.getElementById("player3").innerHTML = d[2]
+           document.getElementById("player4").innerHTML = d[3]
+           document.getElementById("player5").innerHTML = d[4]
+         </script>
+       </div>
+     </div>
+   </section>
 
   <!-- Footer -->
   <footer class="footer text-center">

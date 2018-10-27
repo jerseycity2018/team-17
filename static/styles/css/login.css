@@ -5,15 +5,19 @@ box-sizing: border-box;
 *:focus {
 	outline: none;
 }
+
 body {
 font-family: Arial;
 background-color: #3fce99;
 padding: 50px;
+text-align: center;
 }
+
 .login {
 margin: 50px auto;
 width: 800px;
 }
+
 .login-screen {
 background-color: #FFF;
 padding: 20px;
