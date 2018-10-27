@@ -4,6 +4,7 @@ import os
 import json
 
 app = Flask(__name__)
+app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 Bootstrap(app)
 
 @app.route('/')
@@ -22,9 +23,8 @@ def login():
 	if result == True:
 		return render_template('profile.html', )
 	else:
-		error = "wrong password or username"
-		print(error)
-	return render_template('login.html', error=error)
+		flash('wrong password or username')
+	return render_template('login.html')
 
 @app.route('/loadlogin', methods=['GET','POST'])
 def dashboard():
