@@ -27,6 +27,17 @@
 	                <input type="submit" value="Log in" class="btn btn-primary btn-large btn-block" >
 				    <br>
 				</div>
+<<<<<<< HEAD
+=======
+ 
+                <input type="submit" value="Log in" class="btn btn-primary btn-large btn-block" >
+			    <br>
+			{% with messages = get_flashed_messages() %}
+				{%for message in messages %}
+					<h3>{{ message }}
+				{% endfor %}
+			{% endwith %}
+>>>>>>> 2812ba0f6279adc72d75cb4109f14f18d9e6a9c1
 			</div>
 		</div>
 	</form>
