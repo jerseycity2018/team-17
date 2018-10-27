@@ -1,5 +1,6 @@
 from flask import Flask, flash, request, redirect, render_template, session, abort
 from flask_bootstrap import Bootstrap
+import os
 #from flask.ext.scss import Scss
 import json
 
