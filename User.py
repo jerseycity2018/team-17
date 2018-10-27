@@ -21,7 +21,7 @@ def login():
 	print(password)
 	result = check(username, password)
 	if result == True:
-		return render_template('profile.html', )
+		return render_template('profile2.html', )
 	else:
 		flash('wrong password or username')
 	return render_template('login.html')
