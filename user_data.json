@@ -1,105 +1,81 @@
 {
   "sam": [
   {
-    "Food": "Beans",
-    "Frequency": 40
+    "Beans" : 40
   },
   {
-    "Food": "Vegetables",
-    "Frequency": 34
+    "Vegetables" : 34
   },
   {
-    "Food": "Fruits",
-    "Frequency": 20
+    "Fruits" : 20
   },
   {
-    "Food": "Grain",
-    "Frequency": 10
+    "Grain" : 10
   },
   {
-    "Food": "Other",
-    "Frequency": 15
+   "Other" : 15
   }],
   "aaron": [
   {
-    "Food": "Meat",
-    "Frequency": 10
+    "Meat" : 10
   },
   {
-    "Food": "Dairy",
-    "Frequency": 10
+    "Dairy" : 10
   },
   {
-    "Food": "Vegetables",
-    "Frequency": 25
+    "Vegetables" : 25
   },
   {
-    "Food": "Grain",
-    "Frequency": 15
+    "Grain" : 15
   },
   {
-    "Food": "Seafood",
-    "Frequency": 10
+    "Seafood" : 10
   }], 
   "dhruvil": [
   {
-    "Food": "Fruit",
-    "Frequency": 40
+    "Fruit" : 40
   },
   {
-    "Food": "Beans",
-    "Frequency": 10
+    "Beans" : 10
   },
   {
-    "Food": "Vegetable",
-    "Frequency": 30
+    "Vegetable" : 30
   },
   {
-    "Food": "Grain",
-    "Frequency": 20
+    "Grain" : 20
   },
   {
-    "Food": "Other",
-    "Frequency": 30
+    "Other" : 30
   }
 ],
 "nayana": [
   {
-    "Food": "Fruit",
-    "Frequency": 30
+    "Fruit" : 30
   },
   {
-    "Food": "Beans",
-    "Frequency": 20
+    "Beans" : 20
   },
   {
-    "Food": "Vegetables",
-    "Frequency": 50
+    "Vegetables" : 50
   },
   {
-    "Food": "Grain",
-    "Frequency": 50
+    "Grain" : 50
   },
   {
-    "Food": "Other",
-    "Frequency": 10
+    "Other" : 10
   }
 ],
 "yan": [
   {
-    "Food": "Meat",
-    "Frequency": 49
+    "Meat" : 49
   },
   {
-    "Food": "Vegetables",
-    "Frequency": 30
+    "Vegetables" : 30
   },
   {
-    "Food": "Starch",
-    "Frequency": 20
+    "Starch" : 20
   },
   {
-    "Food": "Fruit",
-    "Frequency": 10
+    "Fruit" : 10
   }
 ]}
