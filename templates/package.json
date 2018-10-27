@@ -15,7 +15,21 @@
     "license": "MIT",
     "author": "team-17",
     "contributors": [
-        "Sam, Dhruvil, Chia-y, Nayana, Yan"
+        {
+            "name":"Sam"
+        },
+        {
+            "name":"Dhruvil"
+        },
+        {
+            "name":"Chia-y"
+        }, 
+        {
+            "name":"Nayana"
+        }, 
+        {
+            "name":"Yan"
+        }
     ],
     "repository": {
         "type": "git",
