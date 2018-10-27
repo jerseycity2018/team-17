@@ -1,10 +1,6 @@
 {
   "sam": [
   {
-    "Food": "Starch",
-    "Frequency": 13
-  },
-  {
     "Food": "Beans",
     "Frequency": 40
   },
@@ -44,10 +40,6 @@
   {
     "Food": "Seafood",
     "Frequency": 10
-  },
-  {
-    "Food": "Starch",
-    "Frequency": 20
   }], 
   "dhruvil": [
   {
@@ -61,10 +53,6 @@
   {
     "Food": "Vegetable",
     "Frequency": 30
-  },
-  {
-    "Food": "Starch",
-    "Frequency": 50
   },
   {
     "Food": "Grain",
@@ -95,20 +83,12 @@
   {
     "Food": "Other",
     "Frequency": 10
-  },
-  {
-    "Food": "Starch",
-    "Frequency": 10
   }
 ],
 "yan": [
   {
     "Food": "Meat",
     "Frequency": 49
-  },
-  {
-    "Food": "Poultry",
-    "Frequency": 30
   },
   {
     "Food": "Vegetables",
