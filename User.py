@@ -1,6 +1,17 @@
 from flask import Flask
+from flask import Flask, flash, request, redirect, render_template, session, abort
 app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return 'Hello, World!'
+    return render_template('./home.html')
+
+@app.route('/login', methods=['POST'])
+def login():
+	if request.form['password'] == 'password' and request.form['username'] == 'admin':
+		session['logged_in'] = True
+	else:
+		flash('wrong password!')
+	return home()
+
+	
