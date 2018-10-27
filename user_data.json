@@ -1,12 +1,12 @@
 {
-  "sam": [
-  "Beans" : 40, "Vegetables" : 34, "Fruits" : 20, "Grain" : 10, "Other" : 15}],
-  "aaron": [
-  "Meat" : 10, "Dairy" : 10, "Vegetables" : 25, "Grain" : 15, "Seafood" : 10}], 
-  "dhruvil": [
-  "Fruit" : 40, "Beans" : 10, "Vegetable" : 30, "Grain" : 20, "Other" : 30}],
-  "nayana": [
-  "Fruit" : 30, "Beans" : 20, "Vegetables" : 50, "Grain" : 50, "Other" : 10}],
-  "yan": [
-  "Meat" : 49, "Vegetables" : 30, "Starch" : 20, "Fruit" : 10}]
+  "sam": {
+  "Beans" : 40, "Vegetables" : 34, "Fruits" : 20, "Grain" : 10, "Other" : 15}},
+  "aaron": {
+  "Meat" : 10, "Dairy" : 10, "Vegetables" : 25, "Grain" : 15, "Seafood" : 10}}, 
+  "dhruvil": {
+  "Fruit" : 40, "Beans" : 10, "Vegetable" : 30, "Grain" : 20, "Other" : 30}},
+  "nayana": {
+  "Fruit" : 30, "Beans" : 20, "Vegetables" : 50, "Grain" : 50, "Other" : 10}},
+  "yan": {
+  "Meat" : 49, "Vegetables" : 30, "Starch" : 20, "Fruit" : 10}}
 }
