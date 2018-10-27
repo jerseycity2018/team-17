@@ -1,0 +1,22 @@
+[
+  {
+    "Food": "Fruit",
+    "Frequency": 30
+  },
+  {
+    "Food": "Vegetables",
+    "Frequency": 50
+  },
+  {
+    "Food": "Grain",
+    "Frequency": 50
+  },
+  {
+    "Food": "Other",
+    "Frequency": 10
+  },
+  {
+    "Food": "Starch",
+    "Frequency": 10
+  }
+]
