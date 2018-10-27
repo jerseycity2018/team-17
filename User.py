@@ -1,18 +1,15 @@
 from flask import Flask, flash, request, redirect, render_template, session, abort
 from flask_bootstrap import Bootstrap
-#from flask.ext.scss import Scss
 import json
-
-#conn = sqlite3.connect("pathtofilehere")
-#c = conn.cursor
 
 app = Flask(__name__)
 Bootstrap(app)
-#Scss(app, static_dir='static', asset_dir='assests')
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+#	with open('user_data.json') as json_user_data:
+#		d = json.load(json_user_data)
+	return render_template('index.html')
 
 @app.route('/login', methods=['POST'])
 def login():
