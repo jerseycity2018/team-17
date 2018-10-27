@@ -1,0 +1,30 @@
+[
+  {
+    "Food": "Meat",
+    "Frequency": 10
+  },
+  {
+    "Food": "Poultry",
+    "Frequency": 9
+  },
+  {
+    "Food": "Dairy",
+    "Frequency": 10
+  },
+  {
+    "Food": "Vegetables",
+    "Frequency": 25
+  },
+  {
+    "Food": "Grain",
+    "Frequency": 15
+  },
+  {
+    "Food": "Seafood",
+    "Frequency": 10
+  },
+  {
+    "Food": "Starch",
+    "Frequency": 20
+  }
+]
