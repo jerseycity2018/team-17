@@ -20,17 +20,16 @@ def login():
 	print(password)
 	result = check(username, password)
 	if result == True:
-		return render_template('index.html')
+		return render_template('profile.html', )
 	else:
 		error = "wrong password or username"
 		print(error)
-	return render_template('index.html', error=error)
+	return render_template('login.html', error=error)
 
-@app.route('/dashboard', methods=['GET','POST'])
-def dashboard():
-	if requests.method=='GET':
-		username = request.form['username']
-		result = getData(username)
+#@app.route('/loadlogin', methods=['GET','POST'])
+#def dashboard():
+#	if requests.method=='GET':
+#		return render_template('login.html')
 	
 
 def check(username, password):
