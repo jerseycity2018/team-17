@@ -49,23 +49,17 @@
             </li>
           </ul>
           <div class="text-center mt-0">
-          <a class="btn btn-xl btn-outline-light">
+          <form class="btn btn-xl btn-outline-light" action="/login" method="POST">
             Log In!
-          </a>
-            <form action="/login" method="GET">
+          </form>
+            <form action="/loadlogin" method="GET">
               <div class="login">
-                <div class="login-screen">
-                  <div class="app-title">
-                    <h1>Login</h1>
-                  </div>
                   <div class="login-form">
                     <div class="control-group">
-                    <input type="text" class="login-field" value="" placeholder="username" name="username">
                     <label class="login-field-icon fui-user" for="login-name"></label>
                     </div>
         
                     <div class="control-group">
-                    <input type="password" class="login-field" value="" placeholder="password" name="password">
                     <label class="login-field-icon fui-lock" for="login-pass"></label>
                     </div>
                             <input type="submit" value="Log in" class="btn btn-primary btn-large btn-block" >

@@ -26,10 +26,10 @@ def login():
 		print(error)
 	return render_template('login.html', error=error)
 
-#@app.route('/loadlogin', methods=['GET','POST'])
-#def dashboard():
-#	if requests.method=='GET':
-#		return render_template('login.html')
+@app.route('/loadlogin', methods=['GET','POST'])
+def dashboard():
+	if request.method=='GET':
+		return render_template('login.html')
 	
 
 def check(username, password):
